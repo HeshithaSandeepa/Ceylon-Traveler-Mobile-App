@@ -1,4 +1,3 @@
-Here's an example of a more complete README.md file, incorporating additional details:
 
 # Ceylon Traveler Mobile App
 
@@ -11,9 +10,9 @@ Ceylon Traveler App is your one-stop travel companion for exploring the vibrant 
 ## Features
 
 Explore by category:🗺️
-Discover ancient temples, UNESCO World Heritage Sites, national parks, and more in SriLanka.
+Discover ancient temples, UNESCO World Heritage Sites, national parks, and more in Sri Lanka.
 Offline maps and navigation:🗺️
-Access maps and directions even without internet connection.
+Access maps and directions even without an internet connection.
 
 ## Technologies Used
 
