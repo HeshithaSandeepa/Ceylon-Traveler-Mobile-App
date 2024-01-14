@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SigiriyaFragment">
+
+
+    <Button
+        android:id="@+id/favorite_icon"
+        android:layout_width="35dp"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/ic_favorite_red_24dp"
+        android:clickable="true"
+        android:padding="16dp" />
+    <TextView
+        android:id="@+id/Sigiriya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:text="Sigiriya"
+        android:textSize="30sp" />
+
+    <VideoView
+        android:layout_below="@+id/Sigiriya"
+        android:id="@+id/videoSigiriya"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:clickable="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp" />
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:layout_below="@+id/videoSigiriya"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:orientation="vertical">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapViewSigiriya"
+                android:layout_width="415dp"
+                android:layout_height="200dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"/>
+            <Button
+                android:id="@+id/getDirectionSigiriya"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="260dp"
+                android:layout_marginTop="-60dp"
+                android:layout_marginEnd="1dp"
+                android:text="get directions" />
+
+
+            <TextView
+                android:id="@+id/discriptionSigiriya"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Sigiriya"
+                android:text="Sigiriya is a historic site located in the Central Province of Sri Lanka. The site is famous for its ancient rock fortress, which was built during the 5th century by King Kashyapa. The fortress is also known as the Lion Rock because of the lion statue that once stood at the entrance. Sigiriya is considered one of the most significant and well-preserved examples of ancient urban planning and architecture. The site includes a palace, gardens, and many frescoes, which depict the life and culture of the ancient people who lived in the area. Today, Sigiriya is a popular tourist destination and a UNESCO World Heritage site, attracting visitors from around the world who come to admire its beauty and learn about its rich history." />
+
+            <TextView
+            android:id="@+id/imagesSigiriya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:text="images of Sigiriya"
+            android:textSize="30sp" />
+
+            <ImageView
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="2dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/sigiriya" />
+            <ImageView
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="206dp"
+                android:layout_marginTop="-150dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/sigiriya4" />
+            <ImageView
+
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="2dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/sigiriya2" />
+            <ImageView
+
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="206dp"
+                android:layout_marginTop="-150dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/sigiriya3" />
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="-0dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/sigiriya5" />
+<Button
+            android:id="@+id/btnMoreDetilsSigiriya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:text="Click more Details" />
+            <Button
+                android:id="@+id/btnBookingDetilsSigiriya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50dp"
+                android:text="Booking Deatails" />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+
+
+
+

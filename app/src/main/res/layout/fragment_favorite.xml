@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/shape2"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.FavoriteFragment">
+
+    <TextView
+        android:id="@+id/favorites_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Your Favorite Places"
+        android:textColor="@color/favorite"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/favorites_list"
+        android:background="@drawable/shape"
+        android:backgroundTint="@color/favorite"
+        android:divider="@drawable/divider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        />
+
+
+</FrameLayout>

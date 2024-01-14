@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.NallurFragment">
+
+    <Button
+        android:id="@+id/favorite_icon"
+        android:layout_width="35dp"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/ic_favorite_red_24dp"
+        android:clickable="true"
+        android:padding="16dp" />
+    <TextView
+        android:id="@+id/titleNallur"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="36dp"
+        android:text="Nallur Kovil"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <VideoView
+        android:id="@+id/vedioNallur"
+        android:layout_width="400dp"
+        android:layout_height="165dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="7dp" />
+
+
+    <ScrollView
+        android:id="@+id/idDiscription"
+        android:layout_width="398dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vedioNallur"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapViewNallur"
+                android:layout_width="401dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/discriptionNallur"
+                android:layout_width="398dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/disctiptionNallur" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Images of Nallur Kovil"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+
+            <ImageView
+                android:id="@+id/NallurImage1"
+                android:layout_width="400dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="0dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/nalluur" />
+            <ImageView
+                android:id="@+id/NallurImage2"
+                android:layout_width="400dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="0dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/nallur2" />
+            <ImageView
+                android:id="@+id/NallurImage3"
+                android:layout_width="400dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="0dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/nallur3" />
+
+            <ImageView
+                android:id="@+id/NallurImage4"
+                android:layout_width="400dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="5dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/nallur4" />
+
+            <Button
+                android:id="@+id/btnMoreDetilsNallur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0dp"
+                android:text="Click more Details" />
+            <Button
+                android:id="@+id/btnBookingDetilsNallur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50dp"
+                android:text="Booking Deatails" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="#FF4081" />
+
+    <corners android:radius="25dp" />
+
+    <padding
+        android:left="24dp"
+        android:top="12dp"
+        android:right="24dp"
+        android:bottom="12dp" />
+    <stroke
+        android:width="2dp"
+        android:color="@color/white" />
+    <size
+        android:width="200dp"
+        android:height="50dp" />
+
+    <drawable android:gravity="center_vertical|center_horizontal">
+        <vector android:height="24dp" android:width="24dp" android:tint="#2fffff" android:viewportWidth="24" android:viewportHeight="24">
+            <path android:fillColor="#2fffff" android:pathData="M12,2c-5.5,0 -10,4.5 -10,10s4.5,10 10,10s10,-4.5 10,-10s-4.5,-10 -10,-10zm3.5,13.5h-7l3.5,-3.5l-2.5,-2.5l-3.5,3.5v-9h2v6.5l3,-3l2.5,2.5l-3.5,3.5z"/>
+        </vector>
+    </drawable>
+
+</shape>

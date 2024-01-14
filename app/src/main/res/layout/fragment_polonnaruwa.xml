@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.PolonnaruwaFragment">
+
+    <Button
+        android:id="@+id/favorite_icon"
+        android:layout_width="35dp"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/ic_favorite_red_24dp"
+        android:clickable="true"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/Polonnaruwa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:text="Polonnaruwa"
+        android:textSize="30sp" />
+
+    <VideoView
+        android:layout_below="@+id/Polonnaruwa"
+        android:id="@+id/videoPolonnaruwa"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:clickable="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp" />
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:layout_below="@+id/videoPolonnaruwa"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:orientation="vertical">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapViewPolonnaruwa"
+                android:layout_width="415dp"
+                android:layout_height="200dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"/>
+            <Button
+                android:id="@+id/getDirectionPolonnaruwa"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="-60dp"
+                android:layout_marginEnd="1dp"
+                android:text="get directions" />
+            <TextView
+                android:id="@+id/discriptionPolonnaruwa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Polonnaruwa"
+                android:text="@string/polonnaruwaDiscrption" />
+
+            <TextView
+                android:id="@+id/imagesPolonnaruwa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=" Polonnaruwa Popular Sights"
+                android:textSize="30sp" />
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:outlineSpotShadowColor="@color/black"
+                >
+
+
+                <ImageView
+                    android:id="@+id/PolonnaruwaImage1"
+                    android:layout_width="400dp"
+                    android:layout_height="250dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="0dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/galviharaya" />
+                <TextView
+                    android:layout_width="400dp"
+                    android:layout_height="50dp"
+                    android:textSize="20dp"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginStart="20dp"
+                    android:text="Gal wiharaya"
+                    />
+
+                <Button
+                    android:id="@+id/btnGalviharaya"
+                    android:layout_width="176dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="280dp"
+
+                    android:text="View Details ->" />
+
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:outlineSpotShadowColor="@color/black"
+                >
+
+
+                <ImageView
+                    android:id="@+id/PolonnaruwaImage2"
+                    android:layout_width="400dp"
+                    android:layout_height="250dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="0dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/pulasthi" />
+                <TextView
+                    android:layout_width="400dp"
+                    android:layout_height="50dp"
+                    android:textSize="20dp"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginStart="20dp"
+                    android:text="king parakramabahu Statue"
+                    />
+
+                <Button
+                    android:id="@+id/btnkingparakarama"
+                    android:layout_width="176dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="280dp"
+
+                    android:text="View Details ->" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:outlineSpotShadowColor="@color/black"
+                >
+
+
+                <ImageView
+                    android:id="@+id/PolonnaruwaImage3"
+                    android:layout_width="400dp"
+                    android:layout_height="250dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="0dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/maligawa" />
+                <TextView
+                    android:layout_width="400dp"
+                    android:layout_height="50dp"
+                    android:textSize="20dp"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginStart="20dp"
+                    android:text="ancient palace"
+                    />
+
+                <Button
+                    android:id="@+id/btnPalace"
+                    android:layout_width="176dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="280dp"
+
+                    android:text="View Details ->" />
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

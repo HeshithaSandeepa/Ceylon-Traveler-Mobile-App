@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".Fragments.HomeFragment">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="393dp"
+        android:layout_height="62dp"
+        android:text="@string/welcome"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.922" />
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="200dp"
+        android:autoStart="true"
+        android:flipInterval="2000"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arukkupalama" />
+
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hikka" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sigiriya" />
+    </ViewFlipper>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="365dp"
+        android:layout_height="104dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/button1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/jaffna1"
+                android:background="@drawable/round_button"
+                android:layout_marginRight="30dp"
+                android:contentDescription="imageButton1"
+                android:clickable="true"
+                android:clipToOutline="true"/>
+
+
+
+
+            <ImageButton
+                android:id="@+id/button2"
+                android:layout_width="100dp"
+                android:clickable="true"
+                android:layout_height="100dp"
+                android:src="@drawable/anuradapuraya1"
+                android:layout_marginRight="30dp"
+                android:contentDescription="imageButton1"
+                android:background="@drawable/round_button"
+                android:clipToOutline="true"
+
+                android:focusable="true" />
+
+            <ImageButton
+                android:id="@+id/button3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:clickable="true"
+                android:src="@drawable/polonnaruwa1"
+                android:contentDescription="imageButton3"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/round_button"
+                android:clipToOutline="true"
+                android:focusable="true" />
+
+
+
+            <ImageButton
+                android:id="@+id/button4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sigiriya1"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/round_button"
+                android:clipToOutline="true" />
+
+
+
+            <ImageButton
+                android:id="@+id/button5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/kandy1"
+                android:background="@drawable/round_button"
+                android:clipToOutline="true" />
+
+
+
+            <ImageButton
+                android:id="@+id/button6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/hambantota1"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/round_button"
+                android:clipToOutline="true" />
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView> <!--scroll view with image buttons -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

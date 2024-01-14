@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AnuradapurayaFragment">
+
+    <Button
+        android:id="@+id/favorite_icon"
+        android:layout_width="35dp"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/ic_favorite_red_24dp"
+        android:clickable="true"
+        android:padding="16dp" />
+
+    <TextView
+        android:textColor="@color/textboxColor"
+        android:id="@+id/Anuradapuraya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="Anuradapuraya"
+        android:textSize="30sp" />
+
+    <VideoView
+        android:layout_below="@+id/Anuradapuraya"
+        android:id="@+id/videoAnuradapuraya"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:clickable="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp" />
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:layout_below="@+id/videoAnuradapuraya"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:orientation="vertical">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapViewAnuradapuraya"
+                android:layout_width="415dp"
+                android:layout_height="200dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"/>
+            <Button
+                android:id="@+id/getDirectionAnu"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="-60dp"
+                android:layout_marginEnd="1dp"
+                android:text="get directions" />
+
+            <TextView
+                android:textColor="@color/textboxColor"
+                android:id="@+id/discriptionAnuradapura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Kandy"
+                android:text="@string/discriptionAnuradapuraya" />
+
+            <TextView
+                android:textColor="@color/textboxColor"
+                android:id="@+id/imagesAnuradapura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=" Anuradapura Popular Sights"
+                android:textSize="30sp" />
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+
+                <ImageView
+                    android:id="@+id/AnuradapuraImage1"
+                    android:layout_width="400dp"
+                    android:layout_height="250dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="0dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ruwanwelisaya" />
+
+                <TextView
+                    android:textColor="@color/textboxColor"
+                    android:layout_width="400dp"
+                    android:layout_height="50dp"
+                    android:textSize="20dp"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginStart="20dp"
+                    android:text="Ruwanwali Maha saya"
+                    />
+
+                <Button
+                    android:id="@+id/btnRuwanwali"
+                    android:layout_width="176dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="290dp"
+
+                    android:text="View Details ->" />
+
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:outlineSpotShadowColor="@color/black"
+                >
+
+
+                <ImageView
+                    android:id="@+id/AnuradapuraImage2"
+                    android:layout_width="400dp"
+                    android:layout_height="250dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="0dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/isurumuniya" />
+
+                <TextView
+                    android:textColor="@color/textboxColor"
+                    android:layout_width="400dp"
+                    android:layout_height="50dp"
+                    android:textSize="20dp"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginStart="20dp"
+                    android:text="Isurumuniya"
+                    />
+
+                <Button
+                    android:id="@+id/btnIsurumuniya"
+                    android:layout_width="176dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="280dp"
+
+                    android:text="View Details ->" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:outlineSpotShadowColor="@color/black"
+                >
+
+
+                <ImageView
+                    android:id="@+id/AnuradapuraImage3"
+                    android:layout_width="400dp"
+                    android:layout_height="250dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="0dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/srimahabodiya" />
+                <TextView
+                    android:layout_width="400dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/textboxColor"
+                    android:textSize="20dp"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginStart="20dp"
+                    android:text="Srimahabodiya(ශ්‍රී මහා බෝධිය)"
+                    />
+
+                <Button
+                    android:id="@+id/btnSrimahabodiya"
+                    android:layout_width="176dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="280dp"
+
+                    android:text="View Details ->" />
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnFullScreenAnu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="205dp"
+        android:layout_marginEnd="61dp"
+        android:text="Click" />
+
+
+</RelativeLayout>

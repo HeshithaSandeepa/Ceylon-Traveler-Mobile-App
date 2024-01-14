@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.KirindaFragment">
+    <Button
+        android:id="@+id/favorite_icon"
+        android:layout_width="35dp"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/ic_favorite_red_24dp"
+        android:clickable="true"
+        android:padding="16dp" />
+    <TextView
+        android:id="@+id/titleKirinda"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="36dp"
+        android:text="Kirinda Viharaya"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <VideoView
+        android:id="@+id/vedioKirinda"
+        android:layout_width="400dp"
+        android:layout_height="165dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="7dp" />
+
+
+    <ScrollView
+        android:id="@+id/scrollViewKirinda"
+        android:layout_width="398dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vedioKirinda"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapViewKirinda"
+                android:layout_width="401dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/discriptionKirinda"
+                android:layout_width="398dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/discriptionKirinda"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Images of Kirinda "
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+
+
+
+            <ImageView
+                android:id="@+id/KirindaImage1"
+                android:layout_width="400dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="0dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/kirinda" />
+            <ImageView
+                android:id="@+id/KirindaImage2"
+                android:layout_width="400dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="0dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/kirindabeach" />
+            <ImageView
+                android:id="@+id/KirindaImage3"
+                android:layout_width="400dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="0dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/kirinda2" />
+
+            <ImageView
+                android:id="@+id/KirindaImage4"
+                android:layout_width="400dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="5dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/kirinda3" />
+
+            <Button
+                android:id="@+id/btnMoreDetilsKirinda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0dp"
+                android:text="Click more Details" />
+            <Button
+                android:id="@+id/btnBookingDetilsKirinda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50dp"
+                android:text="Booking Deatails" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
